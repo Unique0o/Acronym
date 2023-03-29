@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Acronym</string>
+    <string name="splash">SPlash</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="pnone_no">Phone Number</string>
+    <string name="_92_3000000000">+92 3000000000</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="plumber">Plumber</string>
+    <string name="orders">(25)</string>
+    <string name="m_ashraf">M. Ashraf</string>
+    <string name="electrician">Electrician </string>
+    <string name="home">Home</string>
+    <string name="individuals2">individuals</string>
+    <string name="services">Services</string>
+    <string name="individualss">Individuals</string>
+    <string name="explore">Explore</string>
+    <string name="back_arrow">back_arrow</string>
+    <string name="individuals">Individulas</string>
+    <string name="filter">filter</string>
+    <string name="filter2">Filter</string>
+    <string name="_4_5">4.5</string>
+    <string name="featured">Featured</string>
+    <string name="profile_pic">profile_pic</string>
+    <string name="call">Call</string>
+    <string name="search_categories">Search Categories</string>
+    <string name="_4_6">4.6</string>
+    <string name="rating">Rating</string>
+    <string name="login">Login</string>
+    <string name="otp_code_verification">OTP Code Verification</string>
+    <string name="enter_the_otp_code_was_sent_you_on">We have sent the code verification \nto your mobile number</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Password</string>
+    <string name="re_password">Re - Password</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="didn_t_get_the_code">Didn’t get the code?</string>
+
+    <!--Buttons Strings-->
+    <string name="verify">Verify</string>
+    <string name="resend_sms"><u>Resend SMS</u></string>
+    <string name="see_all">See All</string>
+
+    <!--SPlash-->
+    <string name="pconnect">PConnect</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="terms_services">I agree to the <u><b>Terms of Services</b></u> and <u><b>Privacy Policy</b></u>.</string>
+    <string name="no_receive_code">I don’t receive a code</string>
+    <string name="let_s_sign_you_in">Let\'s Sign You In</string>
+    <string name="enter_your_profile">Enter your username and password for signin</string>
+    <string name="username">Username</string>
+    <string name="become_restaurant_partner">Become Restaurant partner</string>
+    <string name="get_a_sale">Get a sales boost of up to 30% from takeaways</string>
+    <string name="store_name">Store name</string>
+    <string name="store_address">Store address</string>
+    <string name="email_address">Email address</string>
+    <string name="commission">Commission</string>
+    <string name="membership">Membership</string>
+    <string name="choose_your_membership_program">Choose your membership program</string>
+    <string name="let_s_get_your_account">Lets\'s Get your account back!</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email to receive instructions for resetting your password.</string>
+
+    <!--Home Page Strings-->
+    <string name="online">Online</string>
+    <string name="bn_menu">Menu</string>
+    <string name="bn_orders">Orders</string>
+    <string name="bn_home">Home</string>
+    <string name="bn_merchant">Merchant</string>
+    <string name="bn_account">Account</string>
+    <string name="earnings">Earnings</string>
+    <string name="your_sale">Your sales, cash in and referral earnings</string>
+    <string name="total_earn">$11011448.2</string>
+    <string name="sales_this_week">Sales this Week</string>
+    <string name="_1096910_98">$1096910.98</string>
+    <string name="all">All</string>
+    <string name="processing">Processing</string>
+    <string name="_8_items_for_chakgrish_tongtip">8 items for Chakgrish Tongtip</string>
+    <string name="order_14004">Order #14004</string>
+    <string name="_6_hours_ago">6 hours ago</string>
+    <string name="deliverd">Deliverd</string>
+    <string name="paid">Paid</string>
+    <string name="test">Test Buyer</string>
+    <string name="_190_ordres">190 Orders</string>
+    <string name="member_since">Member since Sat, January 29,2022 11:10 AM </string>
+    <string name="last_orders">Last Orders</string>
+    <string name="quick_management">Quick management of the last 5 orders</string>
+    <string name="top_cusotmers">Top Customers</string>
+    <string name="order">Order</string>
+    <string name="_14004"> #14004</string>
+    <string name="view_full_order_details">View full order details</string>
+    <string name="mac_mahraja">Mac Mahraja</string>
+    <string name="_4_x_50_00">4 X $50.00</string>
+    <string name="_200_00">$200.00</string>
+    <string name="total">Total</string>
+    <string name="_130_95">$130.95</string>
+    <string name="accept">Accepted</string>
+    <string name="reject">Reject</string>
+    <string name="delivery_failed">Delivery Failed</string>
+
+    <!--Order Detail Screen-->
+    <string name="order_detail">Order Detail</string>
+    <string name="orderid">Order ID</string>
+    <string name="delivery">Delivery</string>
+    <string name="printer">printer</string>
+    <string name="option">Option</string>
+    <string name="paid_by_cash_on_delivery">Paid by Cash On delivery</string>
+    <string name="place_on_wed_febraury_15_2023_4_16_am">Place on Wed, Febraury 15, 2023 4:16 AM</string>
+    <string name="timeline">Timeline</string>
+    <string name="order_complete">Order Complete</string>
+    <string name="address">Chakgrish Tongtip\n+66096 7426613\n419A S Los Angeles, CA 90013, USA</string>
+    <string name="delivery_info">Delivery information</string>
+    <string name="get_direction">Get direction</string>
+    <string name="order_detail_heading">Order Detail:</string>
+    <string name="date_time_heading">Date/Time:</string>
+    <string name="asap_heading">Asap:</string>
+    <string name="include_utensils_heading">Include utensils:</string>
+    <string name="no">No</string>
+    <string name="summary">Summary</string>
+    <string name="subtotal_08_items">Subtotal (08 items)</string>
+    <string name="service_fee">Service fee</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="packaging_fee">Packageing Fee</string>
+    <string name="tws">tws (22% included)</string>
+    <string name="courier">Courier tip</string>
+    <string name="search_acromine">Search Acromine</string>
+    <string name="search">Search</string>
+    <string name="no_data_found">No Data Found!</string>
+
+</resources>

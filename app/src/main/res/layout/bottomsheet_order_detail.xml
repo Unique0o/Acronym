@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/app_side_margin"
+        android:layout_marginTop="@dimen/app_side_margin">
+
+
+        <TextView
+            android:id="@+id/tvOrderHeading"
+            style="@style/text_Style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrderNo"
+            style="@style/text_Style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_14004"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvOrderHeading"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_with_grey_outline"
+            android:padding="2dp"
+            android:src="@drawable/clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/icon_grey_color" />
+
+        <ImageView
+            android:id="@+id/btnPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_btn_with_grey_outline"
+            android:padding="4dp"
+            android:src="@drawable/print"
+            app:layout_constraintEnd_toStartOf="@+id/btnCross"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/icon_grey_color" />
+
+        <TextView
+            android:id="@+id/btnViewOrderDetail"
+            style="@style/text_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8_dp"
+            android:paddingVertical="@dimen/padding_08_dp"
+            android:text="@string/view_full_order_details"
+            android:textColor="@color/text_color_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCross" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItemsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_order_list"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnViewOrderDetail"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_product" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/view_bg"
+            app:layout_constraintTop_toBottomOf="@+id/rvItemsList" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/text_Style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/total"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            style="@style/text_Style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/_130_95"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_14sp"
+            android:textStyle="bold" />
+
+
+        <!--Top Earning Layout-->
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/fhOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:constraint_referenced_ids="tvTitle,tvTotalPrice"
+            app:flow_horizontalStyle="spread_inside"
+            app:flow_verticalGap="@dimen/margin_16_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOrderAccept"
+            style="@style/text_style_normal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/material_button_height"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_20sp"
+            app:backgroundTint="@color/color_primary"
+            app:cornerRadius="@dimen/btn_corner_radius_8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOrderReject"
+            style="@style/text_style_normal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/material_button_height"
+            android:backgroundTint="@color/btn_color_grey"
+            android:text="@string/reject"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20sp"
+            app:cornerRadius="@dimen/btn_corner_radius_8dp" />
+
+
+        <!--Order Accepting Buttons-->
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/fhTwo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/material_button_height"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:constraint_referenced_ids="btnOrderAccept,btnOrderReject"
+            app:flow_horizontalGap="@dimen/margin_8_dp"
+            app:flow_horizontalStyle="spread_inside"
+            app:flow_verticalGap="@dimen/margin_16_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fhOne" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelivered"
+            style="@style/text_style_normal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/material_button_height"
+            android:backgroundTint="#FFA81D"
+            android:text="@string/deliverd"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_20sp"
+            app:cornerRadius="@dimen/btn_corner_radius_8dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeliveryFailed"
+            style="@style/text_style_normal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/material_button_height"
+            android:backgroundTint="@color/btn_color_grey"
+            android:text="@string/delivery_failed"
+            android:textAllCaps="false"
+
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_20sp"
+            app:cornerRadius="@dimen/btn_corner_radius_8dp" />
+
+        <!--Order Accepting Buttons-->
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/fhThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:constraint_referenced_ids="btnDelivered,btnDeliveryFailed"
+            app:flow_horizontalGap="@dimen/margin_8_dp"
+            app:flow_horizontalStyle="spread_inside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fhTwo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
